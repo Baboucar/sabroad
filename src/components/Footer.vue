@@ -1,0 +1,63 @@
+<template>
+    <div class="footer">
+        <div class="left">
+            <a href="mailto:info@mysite.com">info@mysite.com</a>
+            <a href="tel:123-456-7890">123-456-7890</a>
+            <div class="icons">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="right">
+            <p>500 Terry Francine Street</p>
+            <p>San Francisco, CA 94158</p>
+        </div>
+        <div class="copyright">
+            &copy;2035 by Jeremy Avens.
+        </div>
+    </div>
+</template>
+
+<script>
+    export default {
+        
+    }
+</script>
+
+<style lang="scss" scoped>
+.footer {
+    background-color: #015cb5;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 250px;
+}
+.footer .left, .footer .right {
+    display: flex;
+    flex-direction: column;
+}
+.footer .left a, .footer .right a {
+    color: #fff;
+    text-decoration: none;
+    margin: 5px 0;
+}
+.footer .left a:hover, .footer .right a:hover {
+    text-decoration: underline;
+}
+.footer .icons a {
+    margin: 0 5px;
+}
+.footer .icons a i {
+    font-size: 1.5em;
+}
+.footer .copyright {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+</style>
