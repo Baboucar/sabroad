@@ -5,10 +5,10 @@
         <span class="harmburger__icon" @click="toggleNav">&#9776;</span>
       </header>
       <nav :class="{ open: isNavOpen }">
-        <router-link to="">Home</router-link>
+        <router-link to="/">Home</router-link>
         <router-link to="/programs">All Programs</router-link>
-        <router-link to="">About Us</router-link>
-        <router-link to="">Apply</router-link>
+        <router-link to="/about">About Us</router-link>
+        <router-link to="/apply">Apply</router-link>
         <router-link to="">Contact Us</router-link>
       </nav>
     </div>
