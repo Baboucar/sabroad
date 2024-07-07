@@ -4,6 +4,7 @@ import Programs from '../components/Programs.vue';
 import CourseDetail from '../components/CourseDetail.vue';
 import About from '../components/About.vue';
 import Apply from '../components/Apply.vue';
+import Contact from '../components/Contact.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -33,6 +34,11 @@ const router = createRouter({
       path:'/apply',
       name:'apply',
       component:Apply
+    },
+    {
+      path:'/contact',
+      name:'contact',
+      component:Contact
     }
     
     

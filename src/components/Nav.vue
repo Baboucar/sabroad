@@ -9,7 +9,7 @@
         <router-link to="/programs">All Programs</router-link>
         <router-link to="/about">About Us</router-link>
         <router-link to="/apply">Apply</router-link>
-        <router-link to="">Contact Us</router-link>
+        <router-link to="/contact">Contact Us</router-link>
       </nav>
     </div>
   </template>
