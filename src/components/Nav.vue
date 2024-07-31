@@ -38,6 +38,9 @@
     margin-left: 1rem;
     color: rgba(0, 0, 0, 0.6);
     font-size: 1.5rem;
+    
+      margin-top: -15px;
+  
   }
   .header {
     display: flex;
@@ -47,6 +50,7 @@
   .harmburger__icon {
     margin-left: auto;
     cursor: pointer;
+    font-size: 3rem;
   }
   nav {
     margin-top: 2.5rem;
@@ -59,6 +63,7 @@
   
   .logo{
     width: 100px;
+    margin-top: 0;
   }
 
   

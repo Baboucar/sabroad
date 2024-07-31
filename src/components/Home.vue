@@ -152,7 +152,7 @@ export default {
 }
 .about_desc, .desc{
     line-height: 2;
-    margin-top: 6rem;
+    
 }
 
 .container {
@@ -223,6 +223,12 @@ img {
    line-height: 1.5;
 }
 
+.video{
+    display: block;
+    width: 93%;
+    margin: 1rem auto;
+   }
+
 @media (max-width: 600px) {
     .footer {
         text-align: center;
@@ -239,7 +245,10 @@ img {
 
 
     }
-
+    .about_desc, .desc{
+        line-height: 2;
+        margin-top: 6rem;
+    }
     .desc {
         margin-top: 5rem;
         margin-left: 3rem;
@@ -281,10 +290,6 @@ img {
     height: 400px;
    }
 
-   .video{
-    display: block;
-    width: 93%;
-    margin: 0 auto;
-   }
+   
 }
 </style>
