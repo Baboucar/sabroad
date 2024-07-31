@@ -78,6 +78,9 @@
       position: fixed;
       text-align: right;
       margin-left: -18rem;
+      background: #FFFFFF;
+      height: 50px;
+      top: 0;
      
 
     }
@@ -94,7 +97,11 @@
     .logo{
       
       position: fixed;
-      
+      z-index: 1;
+    }
+
+    nav{
+      padding-top: 1rem;
     }
     
   }
