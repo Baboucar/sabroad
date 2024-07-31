@@ -2,21 +2,20 @@
     <Nav/>
     <div class="about-page">
       <div class="header">
-        <h1>About</h1>
+        <h1  >About</h1>
       </div>
       
       <div class="company-info">
-        <h2>Beyound Dimension</h2>
+      
         <p>
-          I'm a paragraph. Click here to add your own text and edit me. It's easy.
-          Just click “Edit Text” or double click me to add your own content and
-          make changes to the font. Feel free to drag and drop me anywhere you
-          like on your page. 
+
+          At Beyond Dimension Study Abroad, we believe that education goes beyond the four walls of a classroom. We have helped countless individuals explore new destinations, experience diverse cultures, and discover more about the world and themselves. Our mission is to open doors to global education, providing opportunities that transform lives and broaden horizons
+          Join us and embark on a journey that will shape your future and expand your worldview. Discover more about the world and yourself with Beyond Dimension Study Abroad.
         </p>
         <p>
-          This is a great space to write long text about your company and your
-          services. You can use this space to go into a little more detail about
-          your company. Talk about your team and what services you provide. 
+          We collaborate with the world’s leading colleges and universities to create programs that enhance and enrich classroom lessons. By integrating academic rigor with real-world experiences, our programs offer students a unique blend of learning and adventure. From bustling cities to serene landscapes, our culturally immersive, international educational experiences bring learning to life in ways that textbooks never can.
+          Through our tailored study abroad programs, students gain profound insights and lasting memories from their time abroad. They engage with new perspectives, develop critical thinking skills, and build a global network that will benefit them throughout their lives. At Beyond Dimension Study Abroad, we are committed to making international education accessible and impactful, ensuring that every student returns home not just with knowledge, but with a richer understanding of the world and their place in it.
+
         </p>
       </div>
       <div class="team-section">
@@ -133,6 +132,9 @@
     margin-bottom: 5px;
   }
   
+  p{
+    line-height: 1.5;
+  }
   .member-info p {
     margin: 5px 0;
   }
@@ -142,6 +144,10 @@
         width: 80%;
         margin: 0 auto;
     }
+
+    .header{
+      margin-top: 5rem;
+    }
    
   }
   
@@ -149,6 +155,8 @@
     .team-container {
       flex-direction: column;
     }
+
+    
   }
   </style>
   

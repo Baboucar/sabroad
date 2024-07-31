@@ -14,7 +14,7 @@
           <div class="contact-details">
             <div class="detail">
               <!-- <img src="@/assets/location-icon.png" alt="Location Icon"> -->
-              <i class="fa fa-phone" aria-hidden="true"></i>
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
               <p>41 48 2 Jln Genting Kelang Batu 4 1/2, 53300, Kuala Lumpur, Malaysia.</p>
             </div>
             <div class="detail">
@@ -25,7 +25,7 @@
             </div>
             <div class="detail">
               <!-- <img src="@/assets/email-icon.png" alt="Email Icon"> -->
-              <i class="fa fa-phone" aria-hidden="true"></i>
+              <i class="fa fa-envelope" aria-hidden="true"></i>
               <p>hi@mystudymission.com</p>
             </div>
           </div>
@@ -152,7 +152,10 @@
     align-items: center;
     margin: 10px 0;
   }
-  
+  p{
+        padding-left: 1rem;
+
+  }
   .contact-details .detail img {
     width: 24px;
     height: 24px;

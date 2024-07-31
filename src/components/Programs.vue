@@ -9,7 +9,7 @@
     <div class="business-management">
         <div class="header">
           <img src="/public/images/management.png" alt="Business & Management" class="header-image">
-          <h1 class="title">Business & Management</h1>
+        
         </div>
         <p class="description">
           You will acquire skills in finance, accounting, marketing, HR management, and administrative studies that can pave the way for your own endeavors and projects with global companies.

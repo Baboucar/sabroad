@@ -29,7 +29,7 @@
                 <p class="desc">With years of experience in the education industry, we have developed strong relationships with top universities and colleges in Malaysia, and are well-equipped to guide students through the process of choosing the right program and institution for their needs to study in Malaysia.</p>
 
             </div>
-            <img src="/public/images/platform.jpeg" alt="">
+            <img src="/images/platform.jpeg" alt="">
         </div>
         <div class="container">
             <div class="card" v-for="(item, index) in items" :key="index">
@@ -43,7 +43,7 @@
 
         <div class="container">
             <div class="card">
-                <img src="/public/images/business.jpeg" alt="Business">
+                <img src="/images/business.jpeg" alt="Business">
                 <div class="content">
                     <h3>Business</h3>
                     <div class="high-demand">High demand</div>
@@ -59,7 +59,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="/public/images/business.jpeg" alt="Business">
+                <img src="/images/business.jpeg" alt="Business">
                 <div class="content">
                     <h3>Information Technology</h3>
                     <div class="high-demand">High demand</div>
@@ -75,7 +75,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="/public/images/business.jpeg" alt="Business">
+                <img src="/images/business.jpeg" alt="Business">
                 <div class="content">
                     <h3>Engineering</h3>
                     <div class="high-demand">High demand</div>
@@ -92,6 +92,16 @@
             </div>
         </div>
     </section>
+    <section class="video">
+        <iframe
+        class="video"
+      width="1800"
+      height="315"
+      :src="videoUrl"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+    </section>
    <Footer/>
 
 </template>
@@ -103,7 +113,14 @@ export default {
     components: {
         Nav,
         Footer
-    }
+    },
+
+    data() {
+    return {
+      videoUrl: 'video.mp4'
+    };
+    
+}
     
 }
 </script>
@@ -262,6 +279,12 @@ img {
 
    .background{
     height: 400px;
+   }
+
+   .video{
+    display: block;
+    width: 93%;
+    margin: 0 auto;
    }
 }
 </style>
