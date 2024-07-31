@@ -109,6 +109,7 @@
     padding: 20px;
     background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 5rem;
   }
   
   header h1 {

@@ -56,6 +56,7 @@ import Footer from './Footer.vue';
     text-align: center;
     font-size: .8rem;
     padding: 1rem;
+    margin-top: 5rem;
    
 }
 

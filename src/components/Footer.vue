@@ -1,8 +1,13 @@
 <template>
     <div class="footer">
         <div class="left">
-            <a href="mailto:info@mysite.com">info@mysite.com</a>
-            <a href="tel:123-456-7890">123-456-7890</a>
+            <a href="mailto:info@mysite.com">beyonddimensions2022@gmail.com</a>
+            <a href="tel:22242030329">22242030329</a>
+            <a href="tel:+1 (253) 951-4954">+1 (253) 951-4954</a>
+            <a href="tel:+2205417372">+2205417372</a>
+
+
+
             <div class="icons">
                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -15,7 +20,7 @@
             <p>San Francisco, CA 94158</p>
         </div>
         <div class="copyright">
-            &copy;2035 by Jeremy Avens.
+            &copy;2024 by Beyond Dimensions Study Abroad group.
         </div>
     </div>
 </template>

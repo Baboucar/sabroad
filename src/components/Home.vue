@@ -2,33 +2,33 @@
     <Nav />
     <section class="slide">
         <div class="desc">
-            <p class="first_para">Study in Malaysia Mission</p>
             <h2 class="desc_header">
                 Study in <span class="sp">malaysia</span> for <br> brighter future
             </h2>
 
 
             <div>
-                <router-link to="" class="btn explore"> Explore More</router-link>
-                <router-link to="" class="btn contact"> Contact Now</router-link>
+                <router-link to="/about" class="btn explore"> Explore More</router-link>
+                <router-link to="/contact" class="btn contact"> Contact Now</router-link>
             </div>
         </div>
-        <img src="/images/background.png" alt="">
+        <img class="background" src="/images/background.png" alt="background">
     </section>
     <section class="about">
-        <img src="/images/homepage_intro.png" alt="">
+        <img src="/images/background.jpg" alt="">
         <p class="about_desc">
-            Since 2012, EF Education First has helped millions of people see new places, experience new cultures, and
-            learn new things about the world and themselves. To create programs that continue to elevate and enrich the
-            lessons taught in a classroom, EF Study Abroad partners with the world's top colleges and universities to
-            facilitate culturally immersive, international educational experiences that bring learning to life.
+            Since 2020, we have helped countless individuals explore new destinations, experience diverse cultures, and discover more about the world and themselves. Beyond Dimension Study Abroad collaborates with the world's leading colleges and universities to create programs that enhance and enrich classroom lessons. Our culturally immersive, international educational experiences bring learning to life, ensuring that students gain profound insights and lasting memories from their time abroad.
         </p>
 
     </section>
     <section class="Who">
-        <h2 class="who_title">What we do </h2>
+     
         <div class="two_cards">
-            <p class="desc">With years of experience in the education industry, we have developed strong relationships with top universities and colleges in Malaysia, and are well-equipped to guide students through the process of choosing the right program and institution for their needs to study in Malaysia.</p>
+            <div>
+                <h2 class="who_title">What we do </h2>
+                <p class="desc">With years of experience in the education industry, we have developed strong relationships with top universities and colleges in Malaysia, and are well-equipped to guide students through the process of choosing the right program and institution for their needs to study in Malaysia.</p>
+
+            </div>
             <img src="/public/images/platform.jpeg" alt="">
         </div>
         <div class="container">
@@ -109,11 +109,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .btn {
     text-decoration: none;
     border-radius: 50px;
     transition: all .5s ease;
-    padding: 1rem;
+    padding: .5rem;
     color: #FFFFFF;
     margin-left: .5rem;
     display: inline-block;
@@ -121,6 +122,9 @@ export default {
 
 }
 
+.background{
+    margin-top: 1rem;
+}
 .explore {
     background: #015cb5;
 }
@@ -131,6 +135,7 @@ export default {
 }
 .about_desc, .desc{
     line-height: 2;
+    margin-top: 6rem;
 }
 
 .container {
@@ -191,7 +196,7 @@ export default {
     color: #007BFF;
     font-weight: bold;
 }
-.slide {}
+
 
 img {
     max-width: 100%;
@@ -218,10 +223,6 @@ img {
 
     }
 
-    img {
-        height: 400px;
-    }
-
     .desc {
         margin-top: 5rem;
         margin-left: 3rem;
@@ -239,21 +240,28 @@ img {
     padding-top: 2rem;
     display: grid;
     grid-template-columns: 2fr 2fr;
-    width: 80%;
-    gap: 2rem;
-    margin: 0 auto;
+    width: 70%;
+    gap: 5rem;
+    margin: 2rem auto;
 
    }
    .two_cards{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 5rem;
+    width: 80%;
+    margin: 0 auto;
    }
+   
    .who_title{
     padding-left: 2rem;
    }
    .center__text{
     text-align: center;
+   }
+
+   .background{
+    height: 400px;
    }
 }
 </style>
