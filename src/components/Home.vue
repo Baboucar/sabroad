@@ -55,7 +55,8 @@
                         <li>Marketing</li>
                         <li>Accounting</li>
                     </ul>
-                    <a href="#">View All</a>
+                   <router-link to="/programs">View All</router-link>
+                  
                 </div>
             </div>
             <div class="card">
@@ -71,7 +72,8 @@
                         <li>Computer System Security</li>
                         <li>Internet of Things</li>
                     </ul>
-                    <a href="#">View All</a>
+                    <router-link to="/programs">View All</router-link>
+
                 </div>
             </div>
             <div class="card">
@@ -87,7 +89,8 @@
                         <li>Automation and Robotics</li>
                         <li>Machine Manufacturing</li>
                     </ul>
-                    <a href="#">View All</a>
+                    <router-link to="/programs">View All</router-link>
+
                 </div>
             </div>
         </div>
@@ -145,14 +148,23 @@ export default {
 .explore {
     background: #015cb5;
 }
+.explore:hover{
+    background: #007BFF;
+}
 
 .contact {
     color: #000000;
     background: #edebeb;
 }
+
+.contact:hover{
+    background: #666;
+    color: #FFFFFF;
+}
 .about_desc, .desc{
     line-height: 2;
-    
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, .1), 0 8px 10px -6px rgba(0, 0, 0, .1);
+    padding: 1rem;
 }
 
 .container {
@@ -288,8 +300,11 @@ img {
 
    .background{
     height: 400px;
+    padding-left: 3.5rem;
    }
 
-   
+   .contact{
+    margin-left: 1rem;
+   }
 }
 </style>

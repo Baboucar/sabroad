@@ -100,6 +100,9 @@
   .company-info {
     text-align: center;
     margin-bottom: 40px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, .1), 0 8px 10px -6px rgba(0, 0, 0, .1);
+    padding: 1rem;
+    line-height: 1.5;
 
   }
   

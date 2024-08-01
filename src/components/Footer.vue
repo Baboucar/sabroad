@@ -1,12 +1,9 @@
 <template>
     <div class="footer">
         <div class="left">
-            <a href="mailto:info@mysite.com">beyonddimensions2022@gmail.com</a>
+            <a href="mailto:info@mysite.com">contact@beyonddimension.net </a>
             <a href="tel:22242030329">22242030329</a>
-            <a href="tel:+1 (253) 951-4954">+1 (253) 951-4954</a>
             <a href="tel:+2205417372">+2205417372</a>
-
-
 
             <div class="icons">
                 <a href="#"><i class="fab fa-linkedin-in"></i></a>

@@ -19,7 +19,6 @@ const router = createRouter({
       name:'programs',
       component:Programs
     },
-  
     {
       path: '/course/:name',
       name: 'CourseDetail',
@@ -40,9 +39,14 @@ const router = createRouter({
       name:'contact',
       component:Contact
     }
-    
-    
-  ]
+  ],
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      return { top: 0 }
+    }
+  }
 })
 
 export default router
