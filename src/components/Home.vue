@@ -22,10 +22,10 @@
 
     </section>
     <section class="Who">
-     
+        <h1 class="who_title">What we do </h1>
+
         <div class="two_cards">
             <div>
-                <h2 class="who_title">What we do </h2>
                 <p class="desc">With years of experience in the education industry, we have developed strong relationships with top universities and colleges in Malaysia, and are well-equipped to guide students through the process of choosing the right program and institution for their needs to study in Malaysia.</p>
 
             </div>
@@ -201,6 +201,10 @@ export default {
     margin: 0 0 10px;
     color: #666;
 }
+.who_title{
+    text-align: center;
+   
+}
 .card .content .high-demand {
     background-color:  #015cb5;
     color: #FFFFFF;
@@ -288,11 +292,19 @@ img {
     grid-template-columns: 1fr 1fr;
     gap: 5rem;
     width: 80%;
-    margin: 0 auto;
+    margin: 2rem auto;
    }
    
    .who_title{
-    padding-left: 2rem;
+    
+    font-size: 1.5rem;
+    color:  #015cb5;;
+    width: 11%;
+    margin: 0 auto;
+    border-bottom: .2rem solid;
+   
+   
+    
    }
    .center__text{
     text-align: center;
