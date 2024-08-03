@@ -1,16 +1,16 @@
 <template>
-  <Nav/>
+  <Nav />
   <div class="application-form-page">
     <div class="header">
       <h1>Application Form</h1>
-      <nav>
+      <nav class="nav">
         <router-link to="/">Home</router-link> / <span>Apply Now</span>
       </nav>
     </div>
     <div class="form-container">
       <h2>Register for Interest</h2>
       <p>Start Your Education Journey</p>
-      <form @submit.prevent="submitForm">
+      <form @submit.prevent="submitForm" ref="form">
         <div class="form-row">
           <div class="form-group">
             <label for="name">Name</label>
@@ -49,7 +49,7 @@
       </form>
     </div>
   </div>
-  <Footer/>
+  <Footer />
 </template>
 
 <script>
@@ -60,7 +60,7 @@ import Footer from './Footer.vue';
 export default {
   components: {
     Nav,
-    Footer
+    Footer,
   },
   data() {
     return {
@@ -70,8 +70,8 @@ export default {
         email: '',
         qualification: '',
         interest: '',
-        message: ''
-      }
+        message: '',
+      },
     };
   },
   methods: {
@@ -82,26 +82,31 @@ export default {
         email: this.form.email,
         qualification: this.form.qualification,
         interest: this.form.interest,
-        message: this.form.message
+        message: this.form.message,
       };
 
-      emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams, 'YOUR_USER_ID')
-        .then((response) => {
-          console.log('SUCCESS!', response.status, response.text);
-          alert('Form submitted successfully!');
-        }, (error) => {
-          console.error('FAILED...', error);
-          alert('Failed to submit the form. Please try again.');
-        });
-    }
-  }
+      emailjs
+        .send('service_hrb61or', 'template_dvxafze', templateParams, '2-QbgWjxziT8SkS5l')
+        .then(
+          (response) => {
+            console.log('SUCCESS!', response.status, response.text);
+            alert('Form submitted successfully!');
+          },
+          (error) => {
+            console.error('FAILED...', error);
+            alert('Failed to submit the form. Please try again.');
+          }
+        );
+    },
+  },
 };
 </script>
 
 <style scoped>
-*{
+* {
   box-sizing: border-box;
 }
+
 .application-form-page {
   padding: 20px;
 }
@@ -159,8 +164,12 @@ export default {
   margin-bottom: 5px;
   font-weight: bold;
 }
-
-input, textarea, select {
+.nav{
+  padding-bottom: 1rem;
+}
+input,
+textarea,
+select {
   height: 45px;
 }
 

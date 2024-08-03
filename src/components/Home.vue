@@ -93,6 +93,24 @@
 
                 </div>
             </div>
+
+            <div class="card">
+                <img src="/images/business.jpeg" alt="Business">
+                <div class="content">
+                    <h3>Medicine</h3>
+                    <div class="high-demand">High demand</div>
+                    <div class="rating">★★★★★</div>
+                    <ul>
+                        <li>Nursing Science</li>
+                        <li> Public Health</li>
+                        <li> Psychology</li>
+                        <li> Dentistry</li>
+                        <li>Midwifery</li>
+                    </ul>
+                    <router-link to="/programs">View All</router-link>
+
+                </div>
+            </div>
         </div>
     </section>
     <section class="video">
@@ -263,12 +281,9 @@ img {
     }
     .about_desc, .desc{
         line-height: 2;
-        margin-top: 6rem;
+      
     }
-    .desc {
-        margin-top: 5rem;
-        margin-left: 3rem;
-    }
+    
 
     .desc_header {
         font-size: 3.5rem;
@@ -291,7 +306,7 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5rem;
-    width: 80%;
+    width: 70%;
     margin: 2rem auto;
    }
    

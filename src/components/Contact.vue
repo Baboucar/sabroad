@@ -3,9 +3,7 @@
   <div id="app">
     <header>
       <h1>Get in Touch</h1>
-      <nav>
-        <a href="#">Home</a> / <a href="#">Contact Us</a>
-      </nav>
+      
     </header>
     <div class="contact-container">
       <div class="contact-info">
@@ -15,21 +13,16 @@
           possible.</p>
         <div class="contact-details">
           <div class="detail">
-            <!-- <img src="@/assets/location-icon.png" alt="Location Icon"> -->
             <i class="fa fa-map-marker" aria-hidden="true"></i>
             <p>41 48 2 Jln Genting Kelang Batu 4 1/2, 53300, Kuala Lumpur, Malaysia.</p>
           </div>
           <div class="detail">
-            <!-- <img src="@/assets/phone-icon.png" alt="Phone Icon"> -->
             <i class="fa fa-phone" aria-hidden="true"></i>
-
             <p>+60 11-5864 5052</p>
           </div>
           <div class="detail">
-            <!-- <img src="@/assets/email-icon.png" alt="Email Icon"> -->
             <i class="fa fa-envelope" aria-hidden="true"></i>
-            <p>contact@beyonddimension.net  
-            </p>
+            <p>contact@beyonddimension.net</p>
           </div>
         </div>
       </div>
@@ -37,16 +30,16 @@
         <h2>Send Us a Message</h2>
         <form @submit.prevent="submitForm">
           <label for="name">Name</label>
-          <input type="text" id="name" v-model="form.name">
+          <input type="text" id="name" v-model="form.name" required>
 
           <label for="phone">Phone</label>
-          <input type="text" id="phone" v-model="form.phone">
+          <input type="text" id="phone" v-model="form.phone" required>
 
           <label for="email">Email Address</label>
-          <input type="email" id="email" v-model="form.email">
+          <input type="email" id="email" v-model="form.email" required>
 
           <label for="qualification">Current Qualification</label>
-          <select id="qualification" v-model="form.qualification">
+          <select id="qualification" v-model="form.qualification" required>
             <option value="">Select</option>
             <option value="highschool">High School</option>
             <option value="bachelor">Bachelor's Degree</option>
@@ -55,7 +48,7 @@
           </select>
 
           <label for="interest">Program of Interest</label>
-          <input type="text" id="interest" v-model="form.interest">
+          <input type="text" id="interest" v-model="form.interest" required>
 
           <label for="message">Message</label>
           <textarea id="message" v-model="form.message"></textarea>
@@ -69,12 +62,14 @@
 </template>
 
 <script>
+import emailjs from '@emailjs/browser';
 import Nav from './Nav.vue';
 import Footer from './Footer.vue';
+
 export default {
   components: {
     Nav,
-    Footer
+    Footer,
   },
   name: 'ContactPage',
   data() {
@@ -85,16 +80,35 @@ export default {
         email: '',
         qualification: '',
         interest: '',
-        message: ''
-      }
+        message: '',
+      },
     };
   },
   methods: {
     submitForm() {
-      console.log(this.form);
-      // Handle form submission
-    }
-  }
+      const templateParams = {
+        name: this.form.name,
+        phone: this.form.phone,
+        email: this.form.email,
+        qualification: this.form.qualification,
+        interest: this.form.interest,
+        message: this.form.message,
+      };
+
+      emailjs
+        .send('service_hrb61or', 'template_j6qyy9g', templateParams, '2-QbgWjxziT8SkS5l')
+        .then(
+          (response) => {
+            console.log('SUCCESS!', response.status, response.text);
+            alert('Form submitted successfully!');
+          },
+          (error) => {
+            console.error('FAILED...', error);
+            alert('Failed to submit the form. Please try again.');
+          }
+        );
+    },
+  },
 };
 </script>
 
@@ -160,7 +174,6 @@ header nav a {
 
 p {
   padding-left: 1rem;
-
 }
 
 .contact-details .detail img {
