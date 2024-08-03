@@ -17,7 +17,11 @@
     <section class="about">
         <img src="/images/background.jpg" alt="">
         <p class="about_desc">
-            Since 2020, we have helped countless individuals explore new destinations, experience diverse cultures, and discover more about the world and themselves. Beyond Dimension Study Abroad collaborates with the world's leading colleges and universities to create programs that enhance and enrich classroom lessons. Our culturally immersive, international educational experiences bring learning to life, ensuring that students gain profound insights and lasting memories from their time abroad.
+            Since 2020, we have helped countless individuals explore new destinations, experience diverse cultures, and
+            discover more about the world and themselves. Beyond Dimension Study Abroad collaborates with the world's
+            leading colleges and universities to create programs that enhance and enrich classroom lessons. Our
+            culturally immersive, international educational experiences bring learning to life, ensuring that students
+            gain profound insights and lasting memories from their time abroad.
         </p>
 
     </section>
@@ -26,17 +30,20 @@
 
         <div class="two_cards">
             <div>
-                <p class="desc">With years of experience in the education industry, we have developed strong relationships with top universities and colleges in Malaysia, and are well-equipped to guide students through the process of choosing the right program and institution for their needs to study in Malaysia.</p>
+                <p class="desc">With years of experience in the education industry, we have developed strong
+                    relationships with top universities and colleges in Malaysia, and are well-equipped to guide
+                    students through the process of choosing the right program and institution for their needs to study
+                    in Malaysia.</p>
 
             </div>
             <img src="/images/platform.jpeg" alt="">
         </div>
         <div class="container">
             <div class="card" v-for="(item, index) in items" :key="index">
-              <div class="number" :id="'number' + index">{{ displayNumber(index) }}</div>
-              <div class="description">{{ item.description }}</div>
+                <div class="number" :id="'number' + index">{{ displayNumber(index) }}</div>
+                <div class="description">{{ item.description }}</div>
             </div>
-          </div>
+        </div>
     </section>
     <section>
         <h2 class="center__text">Choose a Course to Get <span class="sp">Started</span></h2>
@@ -55,8 +62,8 @@
                         <li>Marketing</li>
                         <li>Accounting</li>
                     </ul>
-                   <router-link to="/programs">View All</router-link>
-                  
+                    <router-link to="/programs">View All</router-link>
+
                 </div>
             </div>
             <div class="card">
@@ -114,16 +121,9 @@
         </div>
     </section>
     <section class="video">
-        <iframe
-        class="video"
-      width="1800"
-      height="315"
-      :src="videoUrl"
-      frameborder="0"
-      allowfullscreen
-    ></iframe>
+        <iframe class="video" width="1800" height="315" :src="videoUrl" frameborder="0" allowfullscreen></iframe>
     </section>
-   <Footer/>
+    <Footer />
 
 </template>
 
@@ -137,17 +137,16 @@ export default {
     },
 
     data() {
-    return {
-      videoUrl: 'video.mp4'
-    };
-    
-}
-    
+        return {
+            videoUrl: 'video.mp4'
+        };
+
+    }
+
 }
 </script>
 
 <style lang="scss" scoped>
-
 .btn {
     text-decoration: none;
     border-radius: 50px;
@@ -160,13 +159,15 @@ export default {
 
 }
 
-.background{
+.background {
     margin-top: 1rem;
 }
+
 .explore {
     background: #015cb5;
 }
-.explore:hover{
+
+.explore:hover {
     background: #007BFF;
 }
 
@@ -175,11 +176,13 @@ export default {
     background: #edebeb;
 }
 
-.contact:hover{
+.contact:hover {
     background: #666;
     color: #FFFFFF;
 }
-.about_desc, .desc{
+
+.about_desc,
+.desc {
     line-height: 2;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, .1), 0 8px 10px -6px rgba(0, 0, 0, .1);
     padding: 1rem;
@@ -191,6 +194,7 @@ export default {
     justify-content: space-around;
     padding: 20px;
 }
+
 .card {
     background-color: #fff;
     border-radius: 10px;
@@ -200,48 +204,59 @@ export default {
     width: 300px;
     transition: transform 0.2s;
 }
+
 .card:hover {
     transform: scale(1.05);
 }
+
 .card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
+
 .card .content {
     padding: 20px;
 }
+
 .card .content h3 {
     margin: 0 0 10px;
     font-size: 1.5em;
 }
+
 .card .content p {
     margin: 0 0 10px;
     color: #666;
 }
-.who_title{
+
+.who_title {
     text-align: center;
-   
+
 }
+
 .card .content .high-demand {
-    background-color:  #015cb5;
+    background-color: #015cb5;
     color: #FFFFFF;
     padding: 5px 10px;
     border-radius: 5px;
     display: inline-block;
 }
+
 .card .content .rating {
     margin: 10px 0;
     color: gold;
     font-size: 1.2em;
 }
+
 .card .content ul {
     list-style: none;
     padding: 0;
 }
+
 .card .content ul li {
     margin: 5px 0;
 }
+
 .card .content a {
     text-decoration: none;
     color: #007BFF;
@@ -253,24 +268,28 @@ img {
     max-width: 100%;
     height: auto;
 }
-.about_desc{
-   line-height: 1.5;
+
+.about_desc {
+    line-height: 1.5;
 }
 
-.video{
+.video {
     display: block;
     width: 93%;
     margin: 1rem auto;
-   }
+}
 
 @media (max-width: 600px) {
     .footer {
         text-align: center;
     }
-    .footer .left, .footer .right {
+
+    .footer .left,
+    .footer .right {
         align-items: center;
     }
 }
+
 @media(min-width: 64rem) {
     .slide {
         display: grid;
@@ -279,11 +298,13 @@ img {
 
 
     }
-    .about_desc, .desc{
+
+    .about_desc,
+    .desc {
         line-height: 2;
-      
+
     }
-    
+
 
     .desc_header {
         font-size: 3.5rem;
@@ -293,45 +314,49 @@ img {
         color: #015cb5;
         border-bottom: .2rem solid;
     }
-   .about{
-    padding-top: 2rem;
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    width: 70%;
-    gap: 5rem;
-    margin: 2rem auto;
 
-   }
-   .two_cards{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5rem;
-    width: 70%;
-    margin: 2rem auto;
-   }
-   
-   .who_title{
-    
-    font-size: 1.5rem;
-    color:  #015cb5;;
-    width: 11%;
-    margin: 0 auto;
-    border-bottom: .2rem solid;
-   
-   
-    
-   }
-   .center__text{
-    text-align: center;
-   }
+    .about {
+        padding-top: 2rem;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        width: 70%;
+        gap: 5rem;
+        margin: 2rem auto;
 
-   .background{
-    height: 400px;
-    padding-left: 3.5rem;
-   }
+    }
 
-   .contact{
-    margin-left: 1rem;
-   }
+    .two_cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+        width: 70%;
+        margin: 2rem auto;
+    }
+
+    .who_title {
+
+        font-size: 1.5rem;
+        color: #015cb5;
+        ;
+        width: 11%;
+        margin: 0 auto;
+        border-bottom: .2rem solid;
+
+
+
+    }
+
+    .center__text {
+        text-align: center;
+    }
+
+    .background {
+        height: 400px;
+        padding-left: 3.5rem;
+    }
+
+    .contact {
+        margin-left: 1rem;
+    }
 }
 </style>

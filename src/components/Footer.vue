@@ -1,5 +1,5 @@
 <template>
-    <div class="footer">
+    <section class="footer">
         <div class="left">
             <a href="mailto:info@mysite.com">contact@beyonddimension.net </a>
             <a href="tel:22242030329">22242030329</a>
@@ -19,7 +19,7 @@
         <div class="copyright">
             &copy;2024 by Beyond Dimensions Study Abroad group.
         </div>
-    </div>
+    </section>
 </template>
 
 <script>
@@ -39,6 +39,9 @@
     align-items: center;
     height: 250px;
 }
+.left a{
+    padding-top: 1rem;
+}
 .footer .left, .footer .right {
     display: flex;
     flex-direction: column;
@@ -46,7 +49,7 @@
 .footer .left a, .footer .right a {
     color: #fff;
     text-decoration: none;
-    margin: 5px 0;
+   
 }
 .footer .left a:hover, .footer .right a:hover {
     text-decoration: underline;
@@ -60,6 +63,6 @@
 .footer .copyright {
     text-align: center;
     width: 100%;
-    margin-top: 20px;
+   
 }
 </style>
