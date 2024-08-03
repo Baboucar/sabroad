@@ -184,7 +184,6 @@ export default {
 .about_desc,
 .desc {
     line-height: 2;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, .1), 0 8px 10px -6px rgba(0, 0, 0, .1);
     padding: 1rem;
 }
 
@@ -275,7 +274,7 @@ img {
 
 .video {
     display: block;
-    width: 93%;
+    width: 97%;
     margin: 1rem auto;
 }
 
