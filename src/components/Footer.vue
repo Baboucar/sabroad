@@ -1,9 +1,9 @@
 <template>
     <section class="footer">
         <div class="left">
-            <a href="mailto:info@mysite.com">contact@beyonddimension.net </a>
-            <a href="tel:22242030329">22242030329</a>
-            <a href="tel:+2205417372">+2205417372</a>
+            <a class="a" href="mailto:info@mysite.com">contact@beyonddimension.net </a>
+            <a class="a" href="tel:22242030329">22242030329</a>
+            <a class="a" href="tel:+2205417372">+2205417372</a>
 
             <div class="icons">
                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -39,9 +39,6 @@
     align-items: center;
     height: 250px;
 }
-.left a{
-    padding-top: 1rem;
-}
 .footer .left, .footer .right {
     display: flex;
     flex-direction: column;
@@ -50,6 +47,9 @@
     color: #fff;
     text-decoration: none;
    
+}
+.a{
+    margin-top: .5rem;
 }
 .footer .left a:hover, .footer .right a:hover {
     text-decoration: underline;
