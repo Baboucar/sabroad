@@ -14,8 +14,8 @@
         </div>
         <img class="background" src="/images/background.png" alt="background">
     </section>
-    <section class="about">
-        <img src="/images/background.jpg" alt="">
+    <section  class="about">
+        <img class="desc_img" src="/images/background.jpg" alt="">
         <p class="about_desc">
             Since 2020, we have helped countless individuals explore new destinations, experience diverse cultures, and
             discover more about the world and themselves. Beyond Dimension Study Abroad collaborates with the world's
@@ -36,7 +36,7 @@
                     in Malaysia.</p>
 
             </div>
-            <img src="/images/platform.jpeg" alt="">
+            <img class="desc_img" src="/images/platform.jpeg" alt="">
         </div>
         <div class="container">
             <div class="card" v-for="(item, index) in items" :key="index">
@@ -45,7 +45,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="wrapper">
         <h2 class="center__text">Choose a Course to Get <span class="sp">Started</span></h2>
 
         <div class="container">
@@ -158,11 +158,20 @@ export default {
     margin-top: .5rem;
 
 }
-
+.wrapper{
+    width: 95%;
+    margin: 0 auto;
+}
 .background {
     margin-top: 1rem;
+  
+    
 }
-
+.desc_img{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
 .explore {
     background: #015cb5;
 }
@@ -180,9 +189,7 @@ export default {
     background: #666;
     color: #FFFFFF;
 }
-.desc{
-    margin-left: 4rem;
-}
+
 
 .card_desc, .about_desc{
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, .1), 0 8px 10px -6px rgba(0, 0, 0, .1);
@@ -237,6 +244,7 @@ export default {
 
 .who_title {
     text-align: center;
+    padding: 1rem;
 
 }
 
@@ -304,6 +312,9 @@ img {
 
 
     }
+    .desc{
+        margin-left: 4rem;
+    }
 
     .about_desc,
     .desc {
@@ -353,6 +364,7 @@ img {
     }
 
     .center__text {
+        display: inline-block;
         text-align: center;
     }
 
