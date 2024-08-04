@@ -30,7 +30,7 @@
 
         <div class="two_cards">
             <div>
-                <p class="desc">With years of experience in the education industry, we have developed strong
+                <p class="card_desc">With years of experience in the education industry, we have developed strong
                     relationships with top universities and colleges in Malaysia, and are well-equipped to guide
                     students through the process of choosing the right program and institution for their needs to study
                     in Malaysia.</p>
@@ -180,7 +180,14 @@ export default {
     background: #666;
     color: #FFFFFF;
 }
+.desc{
+    margin-left: 4rem;
+}
 
+.card_desc, .about_desc{
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, .1), 0 8px 10px -6px rgba(0, 0, 0, .1);
+    padding: 1rem;
+}
 .about_desc,
 .desc {
     line-height: 2;
