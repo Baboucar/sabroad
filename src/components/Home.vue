@@ -224,6 +224,7 @@ img{
 }
 .marq_img{
     width: 8rem;
+    padding-left: 1rem;
   }
 
 .contact {
