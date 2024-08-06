@@ -338,6 +338,11 @@ img {
     width: 97%;
     margin: 1rem auto;
 }
+.center__text {
+    text-align: center;
+margin-bottom: 1rem;
+}
+
 
 @media (max-width: 600px) {
     .footer {
@@ -409,10 +414,7 @@ img {
 
     }
 
-    .center__text {
-      
-        text-align: center;
-    }
+    
 
     .background {
         height: 400px;
