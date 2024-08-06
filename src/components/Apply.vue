@@ -2,7 +2,7 @@
   <Nav />
   <div class="application-form-page">
     <div class="header">
-      <h1>Application Form</h1>
+      <h1 class="title">Application Form</h1>
       <nav class="nav">
         <router-link to="/">Home</router-link> / <span>Apply Now</span>
       </nav>
@@ -195,9 +195,15 @@ button:hover {
   background: #f8a800;
 }
 
+@media(min-width: 64rem){
+  .title{
+    margin-top: 4rem;
+  }
+}
 @media (max-width: 768px) {
   .form-row {
     flex-direction: column;
   }
+ 
 }
 </style>

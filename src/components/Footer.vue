@@ -37,7 +37,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    height: 250px;
+    height: 300px;
 }
 .footer .left, .footer .right {
     display: flex;

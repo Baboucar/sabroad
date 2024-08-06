@@ -84,7 +84,7 @@ nav.open {
     width: 100%;
     position: fixed;
     text-align: right;
-    margin-left: -18rem;
+    margin-left: -14rem;
     background: #FFFFFF;
     height: 50px;
     top: 0;

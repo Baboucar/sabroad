@@ -108,6 +108,7 @@
   
   .team-section {
     text-align: center;
+    padding: 1rem;
   }
   
   .team-container {

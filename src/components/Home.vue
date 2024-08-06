@@ -120,30 +120,69 @@
             </div>
         </div>
     </section>
+    <section>
+        <h2 class="center__text">Our Partners</h2>
+        <Vue3Marquee>
+            <img class="marq_img"
+                v-for="img in imgArray"
+                :key="img"
+                :src="img"
+            />
+        </Vue3Marquee>
+    </section>
     <section class="video">
-        <iframe class="video" width="1800" height="315" :src="videoUrl" frameborder="0" allowfullscreen></iframe>
+        <iframe class="video" width="1800" height="315" src="video.mp4" frameborder="0" allowfullscreen></iframe>
     </section>
     <Footer />
 
 </template>
 
 <script>
+import { defineComponent } from 'vue'
+
+import { Vue3Marquee } from 'vue3-marquee'
 import Nav from './Nav.vue';
 import Footer from './Footer.vue';
-export default {
+
+export default defineComponent({
+    name: 'Basic',
     components: {
+  
+       
+        Navigation,
         Nav,
-        Footer
+        Footer,
+        Vue3Marquee,
     },
 
-    data() {
-        return {
-            videoUrl: 'video.mp4'
-        };
+    setup() {
+      
+      
+        // Sample images array
+        const imgArray = [
+    'images/apu.jpeg',
+    'images/maha.png',
+    'images/city.png',
+    'images/kl.png',
+    'images/cyber.png',
+    'images/zak.png',
+    'images/geo.png',
+    'images/segi.png',
+    'images/mo.png',
+    'images/taylor.png',
+    'images/south.png',
+    'images/putra.png'
+    
+]
 
+      
+        
+        return { imgArray };
+
+        
     }
+})
 
-}
 </script>
 
 <style lang="scss" scoped>
@@ -157,6 +196,10 @@ export default {
     display: inline-block;
     margin-top: .5rem;
 
+}
+img{
+    max-width: 100%;
+    height: auto;
 }
 .wrapper{
     width: 95%;
@@ -179,6 +222,9 @@ export default {
 .explore:hover {
     background: #007BFF;
 }
+.marq_img{
+    width: 8rem;
+  }
 
 .contact {
     color: #000000;
@@ -364,17 +410,23 @@ img {
     }
 
     .center__text {
-        display: inline-block;
+      
         text-align: center;
     }
 
     .background {
         height: 400px;
-        padding-left: 3.5rem;
+      
     }
 
     .contact {
         margin-left: 1rem;
     }
+
+    .marq_img{
+        
+        padding-left: 4rem;
+        padding-bottom: 1rem;
+      }
 }
 </style>
