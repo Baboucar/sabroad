@@ -39,6 +39,8 @@
       </div>
     
     </div>
+    <Whatsapp phoneNumber="+60172117150" />
+
     <Footer/>
    
 
@@ -47,10 +49,13 @@
   <script>
   import Nav from './Nav.vue';
   import Footer from './Footer.vue';
+  import Whatsapp from './Whatsapp.vue';
   export default {
     components:{
     Nav,
-    Footer
+    Footer,
+    Whatsapp
+
 
     },
     data() {

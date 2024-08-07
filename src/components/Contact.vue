@@ -58,6 +58,8 @@
       </div>
     </div>
   </div>
+  <Whatsapp phoneNumber="+60172117150" />
+
   <Footer />
 </template>
 
@@ -65,11 +67,13 @@
 import emailjs from '@emailjs/browser';
 import Nav from './Nav.vue';
 import Footer from './Footer.vue';
+import Whatsapp from './Whatsapp.vue';
 
 export default {
   components: {
     Nav,
     Footer,
+    Whatsapp
   },
   name: 'ContactPage',
   data() {

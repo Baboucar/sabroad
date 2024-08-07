@@ -84,6 +84,8 @@
       <h1 class="contact">If you cannot find the course you are looking for please <router-link to="/contact" class="link" >Contact us  </router-link>  and we will be glad to assist you</h1>
      </div>
     </section>
+    <Whatsapp phoneNumber="+60172117150" />
+
     <Footer />
   </div>
 </template>
@@ -91,10 +93,12 @@
 <script>
 import Nav from './Nav.vue';
 import Footer from './Footer.vue';
+import Whatsapp from './Whatsapp.vue';
 export default {
   components: {
     Nav,
-    Footer
+    Footer,
+    Whatsapp
   },
   data() {
     return {
