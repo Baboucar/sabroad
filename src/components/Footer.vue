@@ -13,8 +13,8 @@
             </div>
         </div>
         <div class="right">
-            <p>500 Terry Francine Street</p>
-            <p>San Francisco, CA 94158</p>
+            <p>300w Tevragh Zenia, Nouakchott,</p>
+            <p> Mauritania</p>
         </div>
         <div class="copyright">
             &copy;2024 by Beyond Dimensions Study Abroad group.

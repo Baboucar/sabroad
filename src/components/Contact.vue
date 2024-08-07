@@ -14,7 +14,7 @@
         <div class="contact-details">
           <div class="detail">
             <i class="fa fa-map-marker" aria-hidden="true"></i>
-            <p>41 48 2 Jln Genting Kelang Batu 4 1/2, 53300, Kuala Lumpur, Malaysia.</p>
+            <p>300w Tevragh Zenia, Nouakchott, Mauritania</p>
           </div>
           <div class="detail">
             <i class="fa fa-phone" aria-hidden="true"></i>
