@@ -59,6 +59,7 @@ a {
 nav {
   margin-top: 2.5rem;
   display: none;
+
 }
 
 nav.open {
@@ -88,6 +89,7 @@ nav.open {
     background: #FFFFFF;
     height: 50px;
     top: 0;
+    z-index: 1;
   }
   a {
     display: inline-block;
