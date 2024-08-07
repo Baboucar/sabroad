@@ -38,9 +38,9 @@ a {
   display: block;
   padding-top: 1rem;
   margin-left: 1rem;
-  color: rgba(0, 0, 0, 0.6);
+  color: #2C3947;
   font-size: 1.5rem;
-  font-weight: bold;
+  
   margin-top: -15px;
 }
 

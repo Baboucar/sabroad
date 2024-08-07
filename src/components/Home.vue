@@ -285,7 +285,7 @@ img{
 
 .card .content h3 {
     margin: 0 0 10px;
-    font-size: 1.5em;
+    font-size: 1rem;
 }
 
 .card .content p {
@@ -324,7 +324,7 @@ img{
 
 .card .content a {
     text-decoration: none;
-    color: #007BFF;
+    color: #015cb5;
     font-weight: bold;
 }
 
