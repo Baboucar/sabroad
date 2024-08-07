@@ -154,7 +154,7 @@ export default defineComponent({
     components: {
   
        
-        Navigation,
+      
         Nav,
         Footer,
         Whatsapp,
