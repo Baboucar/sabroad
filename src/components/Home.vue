@@ -131,7 +131,8 @@
         </Vue3Marquee>
     </section>
     <section class="video">
-        <iframe class="video" width="1800" height="315" src="video.mp4" frameborder="0" allowfullscreen></iframe>
+        <Youtube videoId="xLvz62_kEPs" />
+
     </section>
     <Whatsapp phoneNumber="+60172117150" />
 
@@ -146,6 +147,7 @@ import { Vue3Marquee } from 'vue3-marquee'
 import Nav from './Nav.vue';
 import Footer from './Footer.vue';
 import Whatsapp from './Whatsapp.vue';
+import Youtube from './Youtube.vue'
 
 export default defineComponent({
     name: 'Basic',
@@ -157,6 +159,7 @@ export default defineComponent({
         Footer,
         Whatsapp,
         Vue3Marquee,
+        Youtube
     },
 
     setup() {
