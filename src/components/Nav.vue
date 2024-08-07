@@ -104,7 +104,7 @@ nav.open {
     width: 100px;
     margin-top: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
   }
 
   
