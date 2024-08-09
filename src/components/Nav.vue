@@ -85,7 +85,7 @@ nav.open {
     width: 100%;
     position: fixed;
     text-align: right;
-    margin-left: -14rem;
+   
     background: #FFFFFF;
     height: 50px;
     top: 0;
@@ -94,11 +94,14 @@ nav.open {
   a {
     display: inline-block;
     font-size: 1rem;
+   
+    margin-right: 2rem;
   }
   .desktop {
     display: flex;
     justify-content: space-between;
     width: 100%;
+
   }
   .logo {
     width: 100px;
