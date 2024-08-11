@@ -4,7 +4,7 @@
       target="_blank"
       class="whatsapp-button"
     >
-      <img src="/whatsapp.gif" alt="WhatsApp" />
+      <img src="/whatsapp.png" alt="WhatsApp" />
     </a>
   </template>
   
