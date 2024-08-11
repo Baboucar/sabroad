@@ -13,6 +13,7 @@
             </div>
         </div>
         <div class="right">
+            <h3>Address</h3>
             <p>300w Tevragh Zenia, Nouakchott,</p>
             <p> Mauritania</p>
         </div>

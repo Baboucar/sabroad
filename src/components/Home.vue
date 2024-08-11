@@ -38,12 +38,12 @@
             </div>
             <img class="desc_img" src="/images/platform.jpeg" alt="">
         </div>
-        <div class="container">
+        <!-- <div class="container">
             <div class="card" v-for="(item, index) in items" :key="index">
                 <div class="number" :id="'number' + index">{{ displayNumber(index) }}</div>
                 <div class="description">{{ item.description }}</div>
             </div>
-        </div>
+        </div> -->
     </section>
     <section class="wrapper">
         <h2 class="center__text">Choose a Course to Get <span class="sp">Started</span></h2>

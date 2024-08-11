@@ -67,7 +67,7 @@
             title: 'CEO',
             email: 'info@mysite.com',
             phone: '123-456-7890',
-            image: '/images/about.png'
+            image: '/images/ceo.jpeg'
           },
           {
             id: 2,
@@ -107,7 +107,7 @@
     margin-bottom: 40px;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, .1), 0 8px 10px -6px rgba(0, 0, 0, .1);
     padding: 1rem;
-    line-height: 1.5;
+    line-height: 1.8;
 
   }
   
@@ -142,7 +142,8 @@
   }
   
   p{
-    line-height: 1.5;
+    line-height: 2;
+    text-align: justify;
   }
   .member-info p {
     margin: 5px 0;
