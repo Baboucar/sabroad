@@ -144,6 +144,7 @@
   p{
     line-height: 2;
     text-align: justify;
+    font-weight: 200;
   }
   .member-info p {
     margin: 5px 0;

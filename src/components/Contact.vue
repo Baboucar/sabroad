@@ -123,6 +123,7 @@ body {
   padding: 0;
   background-color: #f8f9fa;
   color: #333;
+
 }
 
 header {
@@ -163,6 +164,7 @@ header nav a {
   flex: 1;
   min-width: 300px;
   max-width: 500px;
+  font-weight: 200;
 }
 
 .contact-info h2,

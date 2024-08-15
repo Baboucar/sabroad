@@ -272,7 +272,7 @@ export default defineComponent({
   
   .rating {
     color: gold;
-    margin-bottom: 1rem;
+    margin-bottom: 1.3rem;
   }
   
   .testimonial-text {
@@ -354,6 +354,7 @@ img{
 .card_desc, .about_desc{
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, .1), 0 8px 10px -6px rgba(0, 0, 0, .1);
     padding: 1rem;
+    font-weight: 200;
 }
 .about_desc,
 .desc {
