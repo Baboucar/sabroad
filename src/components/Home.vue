@@ -26,14 +26,18 @@
 
     </section>
     <section class="Who">
-        <h1 class="who_title">What we do </h1>
+        <h2 class="who_title">What we do </h2>
 
         <div class="two_cards">
             <div>
                 <p class="card_desc">With years of experience in the education industry, we have developed strong
                     relationships with top universities and colleges in Malaysia, and are well-equipped to guide
                     students through the process of choosing the right program and institution for their needs to study
-                    in Malaysia.</p>
+                    in Malaysia.
+
+             
+                        we empower students to achieve their academic goals through exceptional support for studying abroad in Malaysia. Our dedicated team is here to guide you every step of the way.
+                    </p>
 
             </div>
             <img class="desc_img" src="/images/platform.jpeg" alt="">
@@ -121,6 +125,27 @@
         </div>
     </section>
     <section>
+        <div class="testimonials-container">
+            <h2 class="title">What Our Students Say</h2>
+            <p class="subtitle">Discover the transformative experiences of our students who studied in Malaysia. Join them in their journey!</p>
+            <div class="testimonials-grid">
+              <div v-for="(testimonial, index) in testimonials" :key="index" class="testimonial-card">
+                <div class="rating">
+                  <span v-for="n in 5" :key="n" class="star">&#9733;</span>
+                </div>
+                <p class="testimonial-text">{{ testimonial.text }}</p>
+                <div class="author-info">
+                  <img :src="testimonial.image" alt="Author's photo" class="author-photo" />
+                  <div>
+                    <p class="author-name">{{ testimonial.name }}</p>
+                    <p class="author-title">{{ testimonial.title }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <section>
         <h2 class="center__text">Our Partners</h2>
         <Vue3Marquee>
             <img class="marq_img"
@@ -180,11 +205,33 @@ export default defineComponent({
     'images/south.png',
     'images/putra.png'
     
-]
+];
+ const testimonials = [
+        {
+          text: "Studying in Malaysia was a life-changing experience! The cultural diversity and academic excellence exceeded my expectations.",
+          name: "Emily Johnson",
+          title: "Marketing Intern",
+          image: "testimonial-avatar-3.jpg"
+        },
+        {
+          text: "The support from SB was incredible. I felt guided every step of the way, making my transition smooth and enjoyable.",
+          name: "Michael Tan",
+          title: "Engineering Student",
+          image: "testimonial-avatar-3.jpg"
+        },
+        {
+          text: "I made lifelong friends and gained invaluable knowledge. Malaysia is a beautiful place to study!",
+          name: "Aisha Rahman",
+          title: "Business Graduate",
+          image: "testimonial-avatar-3.jpg"
+        },
+        // Add more testimonials as needed
+      ]
+
 
       
         
-        return { imgArray };
+        return { imgArray, testimonials };
 
         
     }
@@ -193,11 +240,70 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+
+.testimonials-container {
+    text-align: center;
+    padding: 2rem;
+    background-color: #000; /* Background color similar to the screenshot */
+    color: #fff; /* Text color similar to the screenshot */
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .testimonial-card {
+    background-color: #333;
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+  
+  .rating {
+    color: gold;
+    margin-bottom: 1rem;
+  }
+  
+  .testimonial-text {
+    margin-bottom: 1rem;
+  }
+  
+  .author-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .author-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+  
+  .author-name {
+    font-weight: bold;
+  }
+  
+  .author-title {
+    font-size: 0.9rem;
+    color: #aaa;
+  }
 .btn {
     text-decoration: none;
-    border-radius: 50px;
+    border-radius: 5px;
     transition: all .5s ease;
-    padding: .5rem;
+    padding: .6rem;
     color: #FFFFFF;
     margin-left: .5rem;
     display: inline-block;
@@ -223,11 +329,11 @@ img{
     margin: 0 auto;
 }
 .explore {
-    background: #015cb5;
+    background:#017BFE;
 }
 
 .explore:hover {
-    background: #007BFF;
+    background: #4493FF;
 }
 .marq_img{
     width: 8rem;
@@ -303,7 +409,7 @@ img{
 }
 
 .card .content .high-demand {
-    background-color: #015cb5;
+    background-color: #017BFE;
     color: #FFFFFF;
     padding: 5px 10px;
     border-radius: 5px;
@@ -327,7 +433,7 @@ img{
 
 .card .content a {
     text-decoration: none;
-    color: #015cb5;
+    color: #017BFE;
     font-weight: bold;
 }
 
@@ -387,7 +493,7 @@ margin-bottom: 1rem;
     }
 
     .sp {
-        color: #015cb5;
+        color: #017BFE;
         border-bottom: .2rem solid;
     }
 
@@ -412,7 +518,7 @@ margin-bottom: 1rem;
     .who_title {
 
         font-size: 1.5rem;
-        color: #015cb5;
+        color: #017BFE;
         ;
         width: 11%;
         margin: 0 auto;

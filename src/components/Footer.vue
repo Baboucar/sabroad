@@ -31,7 +31,7 @@
 
 <style lang="scss" scoped>
 .footer {
-    background-color: #015cb5;
+    background-color: #333;
     color: #fff;
     padding: 20px;
     display: flex;
