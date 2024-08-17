@@ -21,18 +21,14 @@
       <div class="team-section">
         <h2>Our Team</h2>
         <div class="team-container">
-          <div class="team-member" v-for="member in teamMembers" :key="member.id">
-            <img :src="member.image" :alt="member.name" class="member-image" />
-            <div class="member-info">
-              <h3>{{ member.name }}</h3>
-              <p>{{ member.title }}</p>
-              <p>{{ member.email }} | Phone: {{ member.phone }}</p>
-              <p>
-                This is a great space to write long text about your company and
-                your services. You can use this space to go into a little more
-                detail about your company. Talk about your team and what services
-                you provide. 
-              </p>
+          <div class="team-card" v-for="member in teamMembers" :key="member.name">
+            <img :src="member.image" :alt="member.name" class="team-photo"/>
+            <h3 class="team-name">{{ member.name }}</h3>
+            <p class="team-title">{{ member.title }}</p>
+            <div class="team-socials">
+              <a v-for="icon in member.socials" :key="icon.name" :href="icon.url" target="_blank">
+                <img :src="icon.image" :alt="icon.name"/>
+              </a>
             </div>
           </div>
         </div>
@@ -63,22 +59,30 @@
         teamMembers: [
           {
             id: 1,
-            name: 'Jeff Florick',
+            name: 'Alya Khatou',
             title: 'CEO',
+            email: 'info@mysite.com',
+            phone: '123-456-7890',
+            image: '/cc.jpg'
+          },
+          {
+            id: 2,
+            name: 'Cheikh Brahim',
+            title: 'Deputy CEO',
             email: 'info@mysite.com',
             phone: '123-456-7890',
             image: '/images/ceo.jpeg'
           },
           {
-            id: 2,
-            name: 'Jenny Van Bingen',
-            title: 'CFO',
+            id: 3,
+            name: 'Baboucarr Drammeh',
+            title: 'Developer',
             email: 'info@mysite.com',
             phone: '123-456-7890',
             image: '/images/about.png'
           },
           {
-            id: 3,
+            id: 4,
             name: 'Nora Lee Smith',
             title: 'HR',
             email: 'info@mysite.com',
@@ -93,6 +97,67 @@
   </script>
   
   <style scoped>
+
+  .team-container{
+    width: 90%;
+    gap: 2rem;
+    margin: 1rem auto;
+  }
+  .team-card {
+    flex-basis: calc(33.333% - 1rem);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .team-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  .team-name {
+    margin: 0.5rem 0;
+  }
+  
+  .team-title {
+    color: #666;
+    margin-bottom: 1rem;
+    padding-left: 7rem;
+  }
+  
+  .team-socials {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .team-socials img {
+    width: 24px;
+    height: 24px;
+  }
+
+ 
+  
+  @media (min-width: 64rem) {
+    .team-container{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+  
+     gap: 2rem;
+    }
+
+    .header {
+        letter-spacing: 0.08em;
+   
+        font-weight: 200;
+       
+    }
+  }
+  
+ 
   .about-page {
     padding: 20px;
   }
