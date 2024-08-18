@@ -79,15 +79,23 @@
             title: 'Developer',
             email: 'info@mysite.com',
             phone: '123-456-7890',
-            image: '/images/about.png'
+            image: 'testimonial-avatar-3.jpg'
           },
           {
             id: 4,
-            name: 'Nora Lee Smith',
-            title: 'HR',
+            name: 'Memoudy beyatt',
+            title: 'Marketing and media',
             email: 'info@mysite.com',
             phone: '123-456-7890',
-            image: '/images/about.png'
+            image: '/market.jpeg'
+          },
+          {
+            id: 5,
+            name: 'Ahmed Ahmedou',
+            title: 'Visa application and admission',
+            email: 'info@mysite.com',
+            phone: '123-456-7890',
+            image: '/visa.jpg'
           },
           
         ]
@@ -125,7 +133,7 @@
   .team-title {
     color: #666;
     margin-bottom: 1rem;
-    padding-left: 7rem;
+    text-align: center;
   }
   
   .team-socials {

@@ -150,7 +150,7 @@ export default {
 
 .form-container h2 {
   margin-top: 0;
-  color: #fcb900;
+  color: #017BFE;
 }
 
 .form-row {
@@ -188,7 +188,7 @@ select {
 
 button {
   padding: 10px 20px;
-  background: #fcb900;
+  background: #017BFE;
   border: none;
   color: white;
   border-radius: 4px;
@@ -197,12 +197,15 @@ button {
 }
 
 button:hover {
-  background: #f8a800;
+  background: #1879e1;
 }
 
 @media(min-width: 64rem){
   .title{
     margin-top: 4rem;
+  }
+  .header{
+    padding-top: 1rem;
   }
 }
 @media (max-width: 768px) {

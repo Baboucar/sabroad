@@ -208,7 +208,7 @@ p {
 }
 
 .contact-form button {
-  background-color: #342488;
+  background-color: #017BFE;
   color: #ffffff;
   border: none;
   cursor: pointer;

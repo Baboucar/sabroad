@@ -214,7 +214,7 @@ export default defineComponent({
           image: "testimonial-avatar-3.jpg"
         },
         {
-          text: "The support from SB was incredible. I felt guided every step of the way, making my transition smooth and enjoyable.",
+          text: "The support from the team was incredible. I felt guided every step of the way, making my transition smooth and enjoyable.",
           name: "Michael Tan",
           title: "Engineering Student",
           image: "testimonial-avatar-3.jpg"

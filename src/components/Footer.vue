@@ -2,8 +2,9 @@
     <section class="footer">
         <div class="left">
             <a class="a" href="mailto:info@mysite.com">contact@beyonddimension.net </a>
-            <a class="a" href="tel:22242030329">22242030329</a>
+            <a class="a" href="tel:+22242030329">+22242030329</a>
             <a class="a" href="tel:+2205417372">+2205417372</a>
+            <a class="a" href="tel:+22242030329">+22242030329</a>
 
             <div class="icons">
                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -14,7 +15,7 @@
         </div>
         <div class="right">
             <h3>Address</h3>
-            <p>300w Tevragh Zenia, Nouakchott,</p>
+            <p>300w Tevragh Zeina, Nouakchott,</p>
             <p> Mauritania</p>
         </div>
         <div class="copyright">
