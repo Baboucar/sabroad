@@ -8,9 +8,10 @@
 
             <div class="icons">
                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/people/Beyond-Dimensions/61563697877245/?ref=xav_ig_profile_web"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/beyond_dimension_20?igsh=ZTVnOWE1dHcwemlp"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@beyond.dimensions22?_t=8pDMOk9i5N8&_r=1"><i class="fab fa-tiktok"></i></a>
             </div>
         </div>
         <div class="right">

@@ -209,20 +209,20 @@ export default defineComponent({
  const testimonials = [
         {
           text: "Studying in Malaysia was a life-changing experience! The cultural diversity and academic excellence exceeded my expectations.",
-          name: "Emily Johnson",
-          title: "Marketing Intern",
+          name: "Ramatoulaye ",
+          title: "Marketing Major",
           image: "testimonial-avatar-3.jpg"
         },
         {
           text: "The support from the team was incredible. I felt guided every step of the way, making my transition smooth and enjoyable.",
-          name: "Michael Tan",
+          name: "Amadou Gaye",
           title: "Engineering Student",
           image: "testimonial-avatar-3.jpg"
         },
         {
           text: "I made lifelong friends and gained invaluable knowledge. Malaysia is a beautiful place to study!",
-          name: "Aisha Rahman",
-          title: "Business Graduate",
+          name: "Kheiry Abdel Wedoud",
+          title: "Business Major",
           image: "testimonial-avatar-3.jpg"
         },
         // Add more testimonials as needed
