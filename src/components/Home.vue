@@ -160,6 +160,7 @@
 
     </section>
     <Whatsapp phoneNumber="+60172117150" />
+    <Faq/>
 
     <Footer />
 
@@ -173,18 +174,16 @@ import Nav from './Nav.vue';
 import Footer from './Footer.vue';
 import Whatsapp from './Whatsapp.vue';
 import Youtube from './Youtube.vue'
-
+import Faq from './Faq.vue';
 export default defineComponent({
     name: 'Basic',
     components: {
-  
-       
-      
         Nav,
         Footer,
         Whatsapp,
         Vue3Marquee,
-        Youtube
+        Youtube,
+        Faq
     },
 
     setup() {

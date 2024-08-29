@@ -14,7 +14,7 @@
         <div class="contact-details">
           <div class="detail">
             <i class="fa fa-map-marker" aria-hidden="true"></i>
-            <p>300w Tevragh Zenia, Nouakchott, Mauritania</p>
+            <p>300w Tevragh Zeina, Nouakchott, Mauritania</p>
           </div>
           <div class="detail">
             <i class="fa fa-phone" aria-hidden="true"></i>

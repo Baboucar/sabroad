@@ -4,7 +4,7 @@
             <a class="a" href="mailto:info@mysite.com">contact@beyonddimension.net </a>
             <a class="a" href="tel:+22242030329">+22242030329</a>
             <a class="a" href="tel:+2205417372">+2205417372</a>
-            <a class="a" href="tel:+22242030329">+22242030329</a>
+            <a class="a" href="tel:+60 11-5864 5052">+60 11-5864 5052</a>
 
             <div class="icons">
                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
