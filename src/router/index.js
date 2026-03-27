@@ -5,6 +5,8 @@ import CourseDetail from '../components/CourseDetail.vue';
 import About from '../components/About.vue';
 import Apply from '../components/Apply.vue';
 import Contact from '../components/Contact.vue';
+import PrivacyPolicy from '../components/PrivacyPolicy.vue';
+import TermsOfService from '../components/TermsOfService.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -38,6 +40,16 @@ const router = createRouter({
       path:'/contact',
       name:'contact',
       component:Contact
+    },
+    {
+      path:'/privacy-policy',
+      name:'privacy-policy',
+      component:PrivacyPolicy
+    },
+    {
+      path:'/terms-of-service',
+      name:'terms-of-service',
+      component:TermsOfService
     }
   ],
   scrollBehavior(to, from, savedPosition) {

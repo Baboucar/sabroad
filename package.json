@@ -9,7 +9,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@emailjs/browser": "^4.4.1",
     "normalize-scss": "^8.0.0",
     "normalize.css": "^8.0.1",
     "vue": "^3.4.21",

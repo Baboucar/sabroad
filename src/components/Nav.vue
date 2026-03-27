@@ -1,19 +1,28 @@
 <template>
-  <div class="desktop">
-    <header class="header">
-      <router-link to="/">
-        <img class="logo" src="/images/logo.jpeg" alt="logo">
+  <header class="navbar">
+    <div class="navbar__inner">
+      <router-link to="/" class="navbar__logo">
+        <img src="/images/logo.jpeg" alt="Beyond Dimension" />
       </router-link>
-      <span class="harmburger__icon" @click="toggleNav">&#9776;</span>
-    </header>
-    <nav :class="{ open: isNavOpen }">
-      <router-link to="/" exact-active-class="active-link">Home</router-link>
-      <router-link to="/programs" exact-active-class="active-link">All Programs</router-link>
-      <router-link to="/about" exact-active-class="active-link">About Us</router-link>
-      <router-link to="/apply" exact-active-class="active-link">Apply</router-link>
-      <router-link to="/contact" exact-active-class="active-link">Contact Us</router-link>
-    </nav>
-  </div>
+
+      <nav class="navbar__links" :class="{ open: isNavOpen }">
+        <router-link to="/" exact-active-class="active-link">Home</router-link>
+        <router-link to="/programs" exact-active-class="active-link">Programs</router-link>
+        <router-link to="/about" exact-active-class="active-link">About</router-link>
+        <router-link to="/apply" exact-active-class="active-link">Apply</router-link>
+        <router-link to="/contact" exact-active-class="active-link">Contact</router-link>
+      </nav>
+
+      <div class="navbar__actions">
+        <router-link to="/contact" class="btn-outline">Contact Us</router-link>
+        <router-link to="/apply" class="btn-primary">Apply Now</router-link>
+      </div>
+
+      <button class="hamburger" @click="toggleNav" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
 </template>
 
 <script>
@@ -32,87 +41,143 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-a {
-  list-style-type: none;
-  text-decoration: none;
-  display: block;
-  padding-top: 1rem;
-  margin-left: 1rem;
-  color: #2C3947;
-  font-size: 1.5rem;
-  
-  margin-top: -15px;
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: #fff;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.08);
 }
 
-.header {
+.navbar__inner {
   display: flex;
-  width: 90%;
+  align-items: center;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 1.5rem;
+  height: 64px;
+  gap: 2rem;
 }
 
-.harmburger__icon {
-  margin-left: auto;
-  cursor: pointer;
-  font-size: 3rem;
-}
-
-nav {
-  margin-top: 2.5rem;
-  display: none;
-
-}
-
-nav.open {
+.navbar__logo img {
+  height: 40px;
+  width: auto;
   display: block;
 }
 
-.logo{
-  width: 76px;margin-top: 12px;
+.navbar__links {
+  display: flex;
+  gap: 0.25rem;
+  flex: 1;
+  justify-content: center;
+
+  a {
+    text-decoration: none;
+    color: #374151;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0.4rem 0.75rem;
+    border-radius: 6px;
+    transition: color 0.2s;
+
+    &:hover {
+      color: #1d4ed8;
+    }
+  }
+
+  .active-link {
+    color: #1d4ed8;
+    font-weight: 600;
+  }
 }
 
-
-.active-link {
-  color: #015cb5 !important;
+.navbar__actions {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
 }
 
-@media (min-width: 64rem) {
-  .harmburger__icon {
+.btn-outline {
+  text-decoration: none;
+  color: #1d4ed8;
+  border: 1.5px solid #1d4ed8;
+  padding: 0.45rem 1.1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.2s;
+
+  &:hover {
+    background: #1d4ed8;
+    color: #fff;
+  }
+}
+
+.btn-primary {
+  text-decoration: none;
+  background: #1d4ed8;
+  color: #fff;
+  padding: 0.45rem 1.1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background 0.2s;
+
+  &:hover {
+    background: #1e40af;
+  }
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  padding: 4px;
+
+  span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: #374151;
+    border-radius: 2px;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar__links {
+    display: none;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    padding: 1rem 1.5rem 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    gap: 0.25rem;
+
+    &.open {
+      display: flex;
+    }
+
+    a {
+      font-size: 1rem;
+      padding: 0.6rem 0.5rem;
+    }
+  }
+
+  .navbar__actions {
     display: none;
   }
-  nav {
-    display: inline-block;
-    margin-top: 0;
-    width: 100%;
-    position: fixed;
-    text-align: right;
-   
-    background: #FFFFFF;
-    height: 50px;
-    top: 0;
-    z-index: 1;
-  }
-  a {
-    display: inline-block;
-    font-size: 1rem;
-   
-    margin-right: 2rem;
-  }
-  .desktop {
+
+  .hamburger {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-
-  }
-  .logo {
-    width: 100px;
-    margin-top: 0;
-    position: fixed;
-    z-index: 2;
-  }
-
-  
-  nav {
-    padding-top: 1rem;
   }
 }
 </style>
